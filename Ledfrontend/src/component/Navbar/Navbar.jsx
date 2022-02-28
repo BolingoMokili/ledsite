@@ -9,8 +9,12 @@ const Navbar = () => {
   return (
     <div className='navbar' >
      <div className="logo">
+        <div className="logo-icon">
+          <GoThreeBars/>
+           
+        </div>
        <h1 >leteh</h1>
-       <GoThreeBars/>
+       
      </div>
      <div className="nav-links">
        <ul className="links-container">
@@ -27,6 +31,7 @@ const Navbar = () => {
              <li className="home-link"> <span>sdg</span> tackling </li>
            </ul>
          </li>
+         <div  />
          <li className="links-what">
            who we are 
            <ul className="who-links show ">
@@ -38,6 +43,7 @@ const Navbar = () => {
              <li className="who-link">partners</li>
            </ul>
          </li>
+         <div  />
          <li className="links-what">
            what we do  
            <ul className="what-links show ">
@@ -46,6 +52,7 @@ const Navbar = () => {
              
            </ul>
          </li>
+         <div/>
          <li className="links-what">
            how can we engage 
            <ul className="how-links show ">
@@ -56,6 +63,7 @@ const Navbar = () => {
              <li className="how-link">internship</li>
            </ul>
          </li>
+         <div  />
          <li className="links-what">
            updates   
            <ul className="updates-links show ">
@@ -64,6 +72,7 @@ const Navbar = () => {
              <li className="updates-link">be a community leader</li>
            </ul>
          </li>
+         <div className='line' />
        </ul>
      </div>
      <div className="">

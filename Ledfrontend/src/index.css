@@ -10,6 +10,11 @@
   --color-gold:#b9a221;
 }
 
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 .card-main{
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
@@ -81,4 +86,11 @@
 
 .links-container > li > ul > li , .links-container > li {
   list-style: none;
+}
+
+.line{
+  height: 30px;
+  width: 4px;
+  color: var(--primary-color);
+
 }

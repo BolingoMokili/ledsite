@@ -1,7 +1,8 @@
 
 .navbar{
   display: flex;
-  background: var(--main-green);
+  background: var(--main-white);
+  /* background: var(--main-green); */
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.25rem;
@@ -13,6 +14,8 @@
   display: flex;
   text-transform: uppercase;
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .home-links,
@@ -32,10 +35,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .links-container > li{
-  margin-left: 1rem;
+  margin-left: 1.3rem;
   font-size: 1.255rem;
   font-weight: bold;
   color: var(--primary-color);
@@ -48,4 +52,51 @@
 
 .links-container > li:hover .show{
   display: grid;
+  position: absolute;
+  top: 60px;
+  text-align: center;
+  /* left: 20px; */
+}
+
+.show li{
+  color: var(--main-green);
+}
+
+.links-container > li:nth-child(1):hover .show{  
+  left: 0px;
+}
+
+.links-container > li:nth-child(2):hover .show{
+  left: 50px;
+}
+
+.links-container > li:nth-child(3):hover .show{  
+  left: 20px;
+}
+
+.links-container > li:nth-child(4):hover .show{
+  left: 20px;
+}
+
+.logo-icon{
+  display: none;
+}
+
+.links-container div{
+  width: 2px;
+  height: 25px;
+  background: var(--primary-color);
+  margin-left: 0.5rem;
+}
+
+
+
+
+@media screen and (max-width:960px) {
+  .nav-links{
+    display: none;
+  }
+  .logo-icon{
+    display: block;
+  }
 }
