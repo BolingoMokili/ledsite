@@ -1,3 +1,8 @@
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 
@@ -8,6 +13,7 @@
   --main-white:#fafafa;
   --basic-font:''Dancing Script', cursive';
   --color-gold:#b9a221;
+  --primary-color1:#9d3caa6b;
 }
 
 .slide-bottom {

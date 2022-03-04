@@ -1,36 +1,4 @@
 
-const goal = [
-  {
-    id:1,
-    number:1,
-    title:'no poverty',
-    img:'',
-  },
-  {
-    id:2,
-    number:2,
-    title:'zero hunger',
-    img:'',
-  },
-  {
-    id:3,
-    number:5,
-    title:'gender equality',
-    img:'',
-  },
-  {
-    id:4,
-    number:8,
-    title:'descent work ',
-    img:'',
-  },
-  {
-    id:5,
-    number:11,
-    title:'sustainable cities and communities',
-    img:'',
-  },
-]
 
 const executives = [
   {
@@ -148,5 +116,5 @@ const executives = [
 ]
 
 export default {
-  goal
+  executives
 }
