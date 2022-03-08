@@ -55,6 +55,7 @@
   position: absolute;
   top: 60px;
   text-align: center;
+  z-index: 1;
   /* left: 20px; */
 }
 
