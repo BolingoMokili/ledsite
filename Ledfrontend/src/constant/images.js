@@ -7,6 +7,16 @@ import economic from '../images/economic.jpg'
 import education from '../images/education.jpg'
 import training from '../images/training.jpg'
 import banner from '../images/banner.jpg'
+import Ndahnep from '../images/Ndahnep.jpg'
+import Ngimdoh from '../images/Ngimdoh.jpg'
+import Patricia from '../images/Patricia.jpg'
+import Pisoh from '../images/Pisoh.jpg'
+import Tegomoh from '../images/Tegomoh.jpg'
+import Vivian from '../images/Vivian.jpg'
+import Zeinkoan from '../images/Zeinkoan.jpg'
+import logo from '../images/logo.jpg'
+import Chiakem from '../images/Chiakem.jpg'
+import Rosette from '../images/Rosette.jpg'
 
 
 export default {
@@ -19,4 +29,14 @@ export default {
   education,
   training,
   banner,
+  Ndahnep,
+  Ngimdoh,
+  Patricia,
+  Pisoh,
+  Tegomoh,
+  Zeinkoan,
+  Vivian,
+  Chiakem,
+  Rosette,
+  logo
 }
