@@ -1,0 +1,15 @@
+
+.mission{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+  /* line-height: 1.1rem; */
+}

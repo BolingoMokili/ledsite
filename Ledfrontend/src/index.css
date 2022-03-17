@@ -1,0 +1,104 @@
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+:root{
+  --primary-color:#672085;
+  --secondary-color:#757776;
+  --main-green:#008000;
+  --main-white:#fafafa;
+  --basic-font:''Dancing Script', cursive';
+  --color-gold:#b9a221;
+  --primary-color1:#9d3caa6b;
+  --color-blue:#6dc0f0;
+  --color-dark:#0c0b0bdc;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.card-main{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.card-single{
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-single .footer{
+  font-size: 2.4rem;
+  color: #222;
+  text-align: center;
+}
+
+.name-primary{
+  font-size: 2rem;
+  font-style: italic;
+  font-family:var(--basic-font);
+  letter-spacing: 0.003em;
+  text-transform: capitalize;
+}
+
+.name-secondary{
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+}
+
+.card-secondary{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.donate-btn{
+  padding: 0.5rem 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.55rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  background: var(--primary-color);
+  color: var(--main-white);
+  border: none;
+  cursor: pointer;
+}
+/* .card-secondary-single{
+
+} */
+
+.draft{
+  font-size: 20rem;
+  color: var(--secondary-color);
+  transform: translateX(45deg);
+  text-align: center;
+}
+
+.links-container{
+  text-transform: capitalize;
+}
+
+.links-container > li > ul > li , .links-container > li {
+  list-style: none;
+}
+
+.line{
+  height: 30px;
+  width: 4px;
+  color: var(--primary-color);
+
+}
