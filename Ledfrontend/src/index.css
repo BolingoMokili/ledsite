@@ -119,4 +119,7 @@
   margin-bottom: 1rem;
   color: var(--color-blue);
   text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
 }
+
