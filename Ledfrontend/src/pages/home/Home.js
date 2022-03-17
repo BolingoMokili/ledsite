@@ -4,6 +4,7 @@ import Banner from '../../component/banner/Banner'
 import Engage from '../../component/engage/Engage'
 import Impact from '../../component/impact/Impact'
 import Mission from '../../component/mission/Mission'
+import News from '../../component/news/News'
 import Programs from '../../component/programs/Programs'
 
 
@@ -19,6 +20,8 @@ const Home = () => {
       <Impact/>
       <hr />
       <Engage/>
+      <hr />
+      <News/>
       
     </div>
   )
