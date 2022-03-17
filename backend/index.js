@@ -1,25 +1,35 @@
-
-
 const express = require("express")
-const mongoose = require("mongoose")
+const client = require('./database/database')
 const port = 5000
 const app = express()
-const {MONGOURI} = require("./valueKeys.js")
 
-app.listen(port,()=>{
-  console.log(`server is listening on port ${port}`);
-})
+const router = require('./routers/user')
 
-// this is our database access password  cluster1234#$
-mongoose.connect(MONGOURI)
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
+app.use('/', router)
 
-mongoose.connection.on('connected',()=>{
-  console.log("we are connected to the server i.e mongoDB");
-})
+const start = async ()=>{
+  try {
+    client.on("connect", ()=> {
+      console.log(`Connected to postgres database with user ${client.user} and to database ${client.database}...`);
+  })
+  
+  client.on("end", ()=>{
+      console.log('Database disconnected');
+  })
+    await client.connect()
+    app.listen(()=>{
+      console.log(`App listening on port ${port}...`)
+    })
+  } catch (error) {
+    console.log(error.message)
+  }
+  }
 
-mongoose.connection.on('error',()=>{
-  console.log("we are not connected to the server i.e mongoDB");
-})
+
+start();
+
 
 
 
