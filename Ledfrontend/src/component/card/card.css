@@ -22,4 +22,6 @@
   color: var(--color-dark);
   letter-spacing: 0.008rem;
   text-align: center;
+  text-transform: capitalize;
+  font-size: 1.7rem;
 }

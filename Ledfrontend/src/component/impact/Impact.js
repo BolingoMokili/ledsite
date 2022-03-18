@@ -7,12 +7,13 @@ const Impact = () => {
     <div className='impact' >
       <div className="text">
         <h2>our impact reach in cameroon</h2>
-        <div className="cricles">
+        <div className="main">
+
           <div className="impacts">
-          <div className="circle">
-             <h3>5</h3>
-            <h5>regions</h5>
-          </div>
+            <div className="circle">
+               <h3>5</h3>
+              <h5>regions</h5>
+            </div>
             
             <ul className="links">
               <li>bafoussam ,west region</li>
@@ -25,7 +26,7 @@ const Impact = () => {
           <div className="impacts">
             <div className="circle">
                <h3>25</h3>
-              <h5>regions</h5>
+              <h5>people impacted directly</h5>
             </div>
             <ul className="links">
               <li>20 women capicity building</li>
@@ -35,7 +36,7 @@ const Impact = () => {
           <div className="impacts">
             <div className="circle">
                <h3>2</h3>
-              <h5>programs</h5>
+              <h5 className='' >programs</h5>
             </div>
             <ul className="links">
               <li>women training</li>
@@ -43,6 +44,7 @@ const Impact = () => {
             </ul>
           </div>
         </div>
+
       </div>
     </div>
   )
