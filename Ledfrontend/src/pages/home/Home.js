@@ -21,7 +21,7 @@ const Home = () => {
       <hr />
       <Engage/>
       <hr />
-      <News/>
+      {/* <News/> */}
       
     </div>
   )
