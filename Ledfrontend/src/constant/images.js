@@ -15,6 +15,7 @@ import Tegomoh from '../images/Tegomoh.jpg'
 import Vivian from '../images/Vivian.jpg'
 import Zeinkoan from '../images/Zeinkoan.jpg'
 import logo from '../images/logo.jpg'
+import logo1 from '../images/logo1.jpg'
 import Chiakem from '../images/Chiakem.jpg'
 import Rosette from '../images/Rosette.jpg'
 
@@ -38,5 +39,6 @@ export default {
   Vivian,
   Chiakem,
   Rosette,
-  logo
+  logo,
+  logo1
 }

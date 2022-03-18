@@ -2,6 +2,7 @@
 import React from 'react'
 import Banner from '../../component/banner/Banner'
 import Engage from '../../component/engage/Engage'
+import Goals from '../../component/goals/Goals'
 import Impact from '../../component/impact/Impact'
 import Mission from '../../component/mission/Mission'
 import News from '../../component/news/News'
@@ -22,6 +23,8 @@ const Home = () => {
       <Engage/>
       <hr />
       {/* <News/> */}
+      <hr />
+      <Goals/>
       
     </div>
   )
