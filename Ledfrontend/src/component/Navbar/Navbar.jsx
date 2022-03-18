@@ -3,6 +3,7 @@
 import React from 'react'
 // import {FaBar, FaCross} from 'react-icons/fa'
 import {GoThreeBars} from 'react-icons/go'
+import { Link } from 'react-router-dom'
 import './styles.css'
 
 const Navbar = () => {
@@ -19,7 +20,10 @@ const Navbar = () => {
      <div className="nav-links">
        <ul className="links-container">
          <li className="links-home">
+         <a href='#home' >
            home 
+
+         </a>
            <ul className="home-links show ">
              <li className="home-link">mission</li>
              <li className="home-link">programs</li>
@@ -33,7 +37,10 @@ const Navbar = () => {
          </li>
          <div  />
          <li className="links-what">
-           who we are 
+           <a href="#who">
+           who we are
+           </a>
+            
            <ul className="who-links show ">
              <li className="who-link">history</li>
              <li className="who-link">mission</li>

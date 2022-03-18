@@ -1,0 +1,43 @@
+
+.history{
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.right , .left{
+  width: 50%;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left h4{
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 3.2rem;
+  text-align: left;
+}
+
+.right img{
+  width: 100%;
+}
+
+p.one{
+  margin-top: 0.4rem;
+}
+
+p{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  margin-bottom: .7rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}

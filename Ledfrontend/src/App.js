@@ -4,17 +4,20 @@ import Navbar from './component/Navbar/Navbar';
 import Home from './pages/home/Home';
 // import {BrowserRouter as Router , Route , Routes} from 'react-router-dom'
 import {BrowserRouter as Router , Switch , Route } from 'react-router-dom'
+import Who from './pages/who/Who';
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router> */}
         <Navbar/>
-        <Switch>
-
+        <Home/>
+        <Who/>
+        {/* <Switch>
+          <Route exact path='/' component={<Home/>}/>
+          <Route exact path='/who' component={<Who/>}/>
         </Switch>
-      </Router>
-      <Home/>
+      </Router> */}
     </div>
   );
 }

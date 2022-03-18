@@ -11,7 +11,7 @@ import Programs from '../../component/programs/Programs'
 
 const Home = () => {
   return (
-    <div className='home' >
+    <div className='home' id='home' >
       <Banner/>
       <hr />
       <Mission/>

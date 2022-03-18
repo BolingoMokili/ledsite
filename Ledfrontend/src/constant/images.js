@@ -16,6 +16,7 @@ import Vivian from '../images/Vivian.jpg'
 import Zeinkoan from '../images/Zeinkoan.jpg'
 import logo from '../images/logo.jpg'
 import logo1 from '../images/logo1.jpg'
+import history from '../images/history.jpg'
 import Chiakem from '../images/Chiakem.jpg'
 import Rosette from '../images/Rosette.jpg'
 
@@ -40,5 +41,6 @@ export default {
   Chiakem,
   Rosette,
   logo,
-  logo1
+  logo1,
+  history
 }
