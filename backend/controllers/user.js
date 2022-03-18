@@ -1,4 +1,6 @@
+require('dotenv').config()
 const client = require('../database/database')
+const jwt = require('jsonwebtoken');
 
 
 
@@ -7,66 +9,68 @@ const login = async (req, res) => {
    await client.connect()
    client.query('SELECT * FROM user', (err, result) => {
        if(!err){
-          userCredentials = result.rows
+          userCredentials = {
+              admin_id: result.rows['admin_id'],
+              email: result.rows['admin_email'],
+              password: result.rows['admin_password']
+          }
        }
        client.end();
    })
+   const token = jwt.sign(
+       {admin_id: userCredentials.admin_id, email: userCredentials.email, password: userCredentials.password},
+       process.env.TOKEN_KEY,
+       {
+           expiresIn: "12h"
+       }
+   );
+   userCredentials.token = token;
    if(req.body.email === userCredentials.email && req.body.password === userCredentials.password){
        res.redirect('/admin-panel');
    }
 }
 
-const addPost = async (req, res) =>{
-    const postContent = {id: 1, header: req.body.post_header, post: req.body.post};
+
+const donate = async (req, res) => {
     await client.connect();
-    client.query(
-        `INSERT INTO posts
-        (
-        post_id, 
-        post_header, 
-        post
-        )
-        VALUES(
-            ${postContent.id}, 
-            ${postContent.header}, 
-            ${postContent.post}
-            );`,
-            (err, result)=>{
-                if(!err){
-                    console.log(result.rows);
-                }
-                client.end();
-            }
-            );
+    const singleDonation = req.body
+    const donation = {
+        donation_id: singleDonation.transaction_id,
+        donor: singleDonation.client_name,
+        amount: singleDonation.amount,
+        date_donated: singleDonation.date
+    }
+    client.query(`INSERT INTO donations(
+        donation_id,
+        donor,
+        amount,
+        date_donated
+    )VALUES(
+        ${donation.donation_id},
+        ${donation.donor},
+        ${donation.amount},
+        ${donation.date_donated}
+    )`, (err, result) => {
+        if(!err){
+            res.status(200).json({msg: 'Successful Donation', payload: result.rows})
+        }
+        client.end();
+    })
 }
 
-const updatePost = async (req, res) => {
+const fillAdminDashboard = async (req, res) => {
     await client.connect();
-}
-
-const deletePost = async (req, res) => {
-    await client.connect();
-}
-
-const getSinglePost = async (req, res) => {
-    await client.connect();
-}
-
-const getAllPosts = async (req, res) => {
-    await client.connect();
-}
-
-const donationHistory = async (req, res) => {
-    await client.connect();
+    client.query('SELECT * FROM donations ORDER BY date_donated ASC', (err, result) => {
+        if(!err){
+            res.status(201).json({msg: 'All users loaded', payload: result})
+        }
+        client.end();
+    })
 }
 
 
 module.exports = {
     login,
-    addPost,
-    updatePost,
-    deletePost,
-    getSinglePost,
-    getAllPosts,
-    donationHistory
+    donate,
+    fillAdminDashboard
 }

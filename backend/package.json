@@ -19,6 +19,7 @@
     "express-async-errors": "^3.1.1",
     "hapi": "^18.1.0",
     "jshint": "^2.13.1",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.2.1",
     "mongoose": "^6.1.4",
     "node-mysql": "^0.4.2",

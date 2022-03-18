@@ -6,12 +6,6 @@ CREATE TABLE user(
     password VARCHAR(20) NOT NULL
 );
 
-CREATE TABLE posts (
-    post_id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    post-header VARCHAR(100) NOT NULL,
-    post VARCHAR(10000) NOT NULL
-);
-
 CREATE TABLE donations(
     transaction_id INTEGER PRIMARY KEY AUTO_INCREMENT,
     sender VARCHAR(50) NOT NULL,
