@@ -19,6 +19,11 @@ import logo1 from '../images/logo1.jpg'
 import history from '../images/history.jpg'
 import Chiakem from '../images/Chiakem.jpg'
 import Rosette from '../images/Rosette.jpg'
+import brenda from '../images/brenda.jpg'
+import carline from '../images/carline.jpg'
+import eveline from '../images/eveline.jpg'
+import hilda from '../images/hilda.jpg'
+import seraphine from '../images/seraphine.jpg'
 
 
 export default {
