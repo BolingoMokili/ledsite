@@ -24,6 +24,8 @@ import carline from '../images/carline.jpg'
 import eveline from '../images/eveline.jpg'
 import hilda from '../images/hilda.jpg'
 import seraphine from '../images/seraphine.jpg'
+import rita from '../images/rita.jpg'
+import julien from '../images/julien.jpg'
 
 
 export default {
@@ -39,6 +41,11 @@ export default {
   Ndahnep,
   Ngimdoh,
   Patricia,
+  brenda,
+  carline,
+  eveline,
+  hilda,
+  seraphine,
   Pisoh,
   Tegomoh,
   Zeinkoan,
@@ -47,5 +54,7 @@ export default {
   Rosette,
   logo,
   logo1,
-  history
+  history,
+  rita,
+  julien
 }

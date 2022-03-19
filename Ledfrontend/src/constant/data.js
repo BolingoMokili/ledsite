@@ -11,14 +11,14 @@ const executives = [
   },
   {
     id:2,
-    img:'',
+    img:images.rita,
     firstName:'rita',
     lastName:'zaumu',
     post:'entrepreneur & LED vice president'
   },
   {
     id:3,
-    img:'',
+    img:images.julien,
     firstName:'julien',
     lastName:'tetang',
     post:'early chuldhood educator and LED public relations officer'
@@ -46,7 +46,7 @@ const executives = [
   },
   {
     id:7,
-    img:'',
+    img:images.Ndahnep,
     firstName:'belinda',
     lastName:'ndahnep',
     post:'teacher & LED secretary general '
@@ -67,7 +67,7 @@ const executives = [
   },
   {
     id:10,
-    img:'',
+    img:images.brenda,
     firstName:'brenda',
     lastName:'zeinkoan',
     post:'marketing professional & LED project manager'
@@ -87,37 +87,37 @@ const executives = [
     post:'jurist & LED legal procure'
   },
   
-  {
-    id:12,
-    img:'',
-    firstName:'dr nkongmeme',
-    lastName:'vivian',
-    post:'gender expert and led  pionner'
-  },
+  // {
+  //   id:13,
+  //   img:'',
+  //   firstName:'dr nkongmeme',
+  //   lastName:'vivian',
+  //   post:'gender expert and led  pionner'
+  // },
   {
     id:13,
-    img:'',
+    img:images.eveline,
     firstName:'eveline',
     lastName:'nkongmenic',
     post:'teacher & LED social secretary'
   },
   {
     id:14,
-    img:'',
+    img:images.seraphine,
     firstName:'seraphine',
     lastName:'chiamoh',
     post:'teacher & LED social secretary'
   },
   {
     id:15,
-    img:'',
+    img:images.hilda,
     firstName:'hilda',
     lastName:'nkaze',
     post:'seamstress & LED social secretary'
   },
   {
     id:16,
-    img:'',
+    img:images.carline,
     firstName:'carline',
     lastName:'tegomoh',
     post:'youth empowerment  expert & LED social secretary '
