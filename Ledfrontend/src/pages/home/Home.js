@@ -22,9 +22,10 @@ const Home = () => {
       <hr />
       <Engage/>
       <hr />
-      {/* <News/> */}
+      <News/>
       <hr />
       <Goals/>
+      <hr />
       
     </div>
   )

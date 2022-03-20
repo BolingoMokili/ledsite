@@ -26,6 +26,9 @@ import hilda from '../images/hilda.jpg'
 import seraphine from '../images/seraphine.jpg'
 import rita from '../images/rita.jpg'
 import julien from '../images/julien.jpg'
+import violence from '../images/violence.jpg'
+import left from '../images/left.jpg'
+import leaderShip from '../images/leaderShip.jpg'
 
 
 export default {
@@ -34,6 +37,9 @@ export default {
   goal3,
   goal4,
   goal5,
+  violence,
+  leaderShip,
+  left,
   economic,
   education,
   training,
