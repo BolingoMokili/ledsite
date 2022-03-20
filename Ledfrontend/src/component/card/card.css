@@ -25,3 +25,7 @@
   text-transform: capitalize;
   font-size: 1.7rem;
 }
+
+.staff{
+  z-index: 1;
+}
