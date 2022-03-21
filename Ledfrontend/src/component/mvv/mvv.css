@@ -1,0 +1,24 @@
+
+.mvv{
+  display: flex;
+  margin: 2rem auto;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100hv;
+  padding: 5rem 3rem 6rem;
+}
+
+.mvv div{
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.mvv div h4{
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+  text-align: center;
+}

@@ -2,7 +2,7 @@
 import React from 'react'
 
 const Staff = ( props ) => {
-  const {image,post,firstName, lastName}
+  const {image,post,firstName, lastName} = props 
   return (
     <div className='staff' >
       <img src={image} alt="" />

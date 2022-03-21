@@ -1,7 +1,26 @@
 
-/* .news{
+.news{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-} */
+}
+
+head{
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: brown;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.news h3{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.news-container{
+  display: grid;
+  grid-template-columns: repeat(1fr , 1fr);
+}

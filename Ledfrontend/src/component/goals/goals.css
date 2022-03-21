@@ -1,0 +1,42 @@
+
+.goals{
+  width: 90vw;
+  margin: 2rem auto;
+  padding: 2% 4%;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img{
+  width: 60%;
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: aquamarine;
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+
+.h1:hover{
+  border-bottom: 0.1rem solid black;
+}
+
+.goals-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.goal{
+  width: 200px;
+  height: 200px;
+}
