@@ -1,0 +1,35 @@
+
+.story{
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.story .help,
+.story .tell{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.story .help{
+  margin-bottom: 1.5rem;
+}
+
+.story .tell{
+  cursor: pointer;
+}
+
+.bottom .img{
+  /* width: 30rem; 
+  height: 4rem;  */
+}

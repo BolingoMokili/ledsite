@@ -61,8 +61,9 @@ const Navbar = () => {
            </ul>
          </li>
          <div/>
-         <li className="links-what">
-           how can we engage 
+         <li className="links-how">
+         <a href="#how">how can we engage</a>
+            
            <ul className="how-links show ">
              <li className="how-link">donate</li>
              <li className="how-link">leader in community</li>

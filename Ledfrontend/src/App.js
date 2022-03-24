@@ -7,6 +7,7 @@ import {BrowserRouter as Router , Switch , Route } from 'react-router-dom'
 import Who from './pages/who/Who';
 import What from './pages/what/What';
 import Footer from './component/Footer/Footer';
+import How from './pages/how/How';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Who/>
         <hr />
         <What/>
+        <hr />
+        <How/>
         <hr />
         <Footer/>
         {/* <Switch>
