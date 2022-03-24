@@ -52,7 +52,8 @@ const Navbar = () => {
          </li>
          <div  />
          <li className="links-what">
-           what we do  
+          <a href="#what">what we do  </a>
+           
            <ul className="what-links show ">
              <li className="what-link">programs</li>
              <li className="what-link">be a community leader</li>

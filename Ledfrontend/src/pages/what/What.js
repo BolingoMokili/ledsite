@@ -5,7 +5,7 @@ import './what.css'
 
 const What = () => {
   return (
-    <div className='what' >
+    <div className='what' id="what" >
     <h6>our programs</h6>
     <div className="container">
 

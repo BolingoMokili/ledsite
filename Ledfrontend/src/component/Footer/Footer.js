@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="middle">
-        <div className="who">
+        <div className="whowe">
           <h6>who we are</h6>
           <ul>
             <li><a href="#">history</a></li>
@@ -27,7 +27,7 @@ const Footer = () => {
             <li><a href="#">partners</a></li>
           </ul>
         </div>
-        <div className="what">
+        <div className="whatwe">
           <h6>what we do</h6>
           <ul>
             <li><a href="#">programs</a></li>
@@ -36,7 +36,7 @@ const Footer = () => {
             <li><a href="#">partners</a></li> */}
           </ul>
         </div>
-        <div className="how">
+        <div className="howwe">
           <h6>who we are</h6>
           <ul>
             <li><a href="#">donate</a></li>
@@ -46,7 +46,7 @@ const Footer = () => {
             <li><a href="#">volunteer</a></li>
           </ul>
         </div>
-        <div className="who">
+        <div className="whowe">
           <h6>who we are</h6>
           <ul>
             <li><a href="#">on the news</a></li>
@@ -61,7 +61,30 @@ const Footer = () => {
           donate
         </button>
         <div className="inner">
-          
+          <ul className="list">
+            <li>momo</li>
+            <li>$20</li>
+            <li><span className="xaf" >xaf</span>10000</li>
+          </ul>
+          <ul className="list">
+            <li>orange money</li>
+            <li>$50</li>
+            <li><span className="xaf">xaf</span>25000</li>
+          </ul>
+          <ul className="list">
+            <li>world remit</li>
+            <li>$100</li>
+            <li><span className="xaf">xaf</span>50000</li>
+          </ul>
+          <ul className="list">
+            <li>paypal</li>
+            <li>$500</li>
+            <li><span className="xaf">xaf</span>10000</li>
+          </ul>
+          <ul className="list last">
+            <li>my $amount</li>
+            <li>my <span className="xaf">xaf</span>amout </li>
+          </ul>
         </div>
       </div>
     </div>
