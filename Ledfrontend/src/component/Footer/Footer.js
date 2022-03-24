@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="bottom">
           <h6>contact us</h6>
           <p>telephone number +237 671 106 368</p>  
-          <p><span className="email">email</span> <a href="" className="link">hello@led.mmuock.org</a> </p>
+          <p><span className="email">email</span> <a href="mailto:hello@led.mmuock.org">hello@led.mmuock.org</a> </p>
         </div>
       </div>
       <div className="middle">
@@ -87,6 +87,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      
     </div>
   )
 }
