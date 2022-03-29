@@ -5,9 +5,12 @@
   /* background: var(--main-green); */
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.25rem;
-  height: 4rem;
+  /* padding: 1rem 1.25rem; */
+  /* height: 4rem; */
   border-radius: 1rem;
+  position: relative;
+  width: 100%;
+  padding: 1rem 1.5rem;
 }
 
 .logo{
@@ -90,8 +93,55 @@
   margin-left: 0.5rem;
 }
 
+.small-screen{
+  display: none;
+}
 
 
+.small-screen-overlay .close {
+  font-size: 27px;
+  color: var(--color-golden);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.small-screen-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--primary-color);
+  transition: .5s ease;
+
+  flex-direction: column;
+  z-index: 5;
+}
+
+.smallscreen_links{
+  list-style: none;
+}
+
+.smallscreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--color-golden);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-white);
+  font-family: var(--font-base);
+}
+
+.smallscreen_links li a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.smallscreen_links li:hover {
+  color: var(--color-white);
+}
 
 @media screen and (max-width:960px) {
   .nav-links{
@@ -99,5 +149,20 @@
   }
   .logo-icon{
     display: block;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .small-screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* position:absolute;
+    top: 30%;
+    left: 20%;
+    width: 100%; */
+    /* height: 100%; */
+    /* background: var(--primary-color); */
   }
 }

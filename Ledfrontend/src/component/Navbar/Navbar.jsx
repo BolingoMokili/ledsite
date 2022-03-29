@@ -1,17 +1,21 @@
 
 
-import React from 'react'
+import React, { useState } from 'react'
 // import {FaBar, FaCross} from 'react-icons/fa'
 import {GoThreeBars} from 'react-icons/go'
 import { Link } from 'react-router-dom'
 import './styles.css'
+import { GiHamburgerMenu } from 'react-icons/gi';
+import {FaClose} from 'react-icons/fa'
+import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
 const Navbar = () => {
+  const [navMenu,setNavMenu] = useState(false)
   return (
     <div className='navbar' >
      <div className="logo">
         <div className="logo-icon">
-          <GoThreeBars/>
+          <GoThreeBars onClick={()=>setNavMenu(true)}  />
            
         </div>
        <h1 >leteh</h1>
@@ -83,6 +87,28 @@ const Navbar = () => {
          </li>
          <div className='line' />
        </ul>
+     </div>
+
+     <div className="small-screen">
+      {/* <GiHamburgerMenu color='#fff' fontSize={28} onClick={()=>setNavMenu(true)} />  */}
+      {
+        navMenu && (
+          <div className="small-screen-overlay slide flex-center">
+          <MdOutlineRestaurantMenu 
+            className='close-btn'
+            onClick={()=>setNavMenu(false)}
+           /> 
+          <ul className="smallscreen_links">
+              <li><a href="#home" onClick={() => setNavMenu(false)}>Home</a></li>
+              <li><a href="#who" onClick={() => setNavMenu(false)}>Who we are</a></li>
+              <li><a href="#what" onClick={() => setNavMenu(false)}>What we do</a></li>
+              <li><a href="#how" onClick={() => setNavMenu(false)}>How do you engage</a></li>
+              <li><a href="#upate" onClick={() => setNavMenu(false)}>Update</a></li>
+            </ul>
+          </div>
+
+        )
+      }
      </div>
      <div className="">
        <button className="donate-btn">
