@@ -11,7 +11,7 @@ const Impact = () => {
 
           <div className="impacts">
             <div className="circle">
-               <h3>5</h3>
+              <h3>5</h3>
               <h5>regions</h5>
             </div>
             

@@ -6,7 +6,7 @@ import './engage.css'
 
 const Engage = () => {
   return (
-    <div className='engage' >
+    <div className='engage' id='how' >
       <h1 className='text1' >Engage with us</h1>
       <div className="text2">
         <h2 color='#672085' >Do you want to join us in this journey  to empower women and girls?</h2>

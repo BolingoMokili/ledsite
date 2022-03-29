@@ -18,9 +18,9 @@ const Banner = () => {
          </div>
        </div>
        <div className="banner-footer">
-         <h1>
+         <h6>
            transforming the world
-         </h1>
+         </h6>
          <h4>one woman , one girl at a time </h4>
        </div>
     </div>

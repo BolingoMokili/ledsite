@@ -1,9 +1,10 @@
 
 .news{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
+  margin: 2rem auto;
 }
 
 head{
@@ -15,9 +16,12 @@ head{
 }
 
 .news h3{
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
 }
 
 .news-container{
