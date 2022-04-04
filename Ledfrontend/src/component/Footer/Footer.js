@@ -87,7 +87,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      
+      <a href="#dashboard">dashboard</a>
     </div>
   )
 }
