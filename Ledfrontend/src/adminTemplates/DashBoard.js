@@ -9,9 +9,9 @@ import Navbar from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
 import {userInputs , productInputs} from './formSource'
 
-function App() {
+function DashBoard() {
   return (
-    <div className="App">
+    <div className="App" id='dashboard' >
       <Router>
         {/* <Navbar/> */}
         <Routes>
@@ -36,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default DashBoard;
