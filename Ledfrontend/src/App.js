@@ -8,6 +8,7 @@ import Who from './pages/who/Who';
 import What from './pages/what/What';
 import Footer from './component/Footer/Footer';
 import How from './pages/how/How';
+import DashBoard from './adminTemplates/DashBoard';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <How/>
         <hr />
         <Footer/>
+        <hr/>
+        <DashBoard/>
         {/* <Switch>
           <Route exact path='/' component={<Home/>}/>
           <Route exact path='/who' component={<Who/>}/>
