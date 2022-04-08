@@ -24,10 +24,10 @@ const Navbar = () => {
      <div className="nav-links">
        <ul className="links-container">
          <li className="links-home">
-         <a href='#home' >
+         <Link to='/' >
            home 
 
-         </a>
+         </Link>
            <ul className="home-links show ">
              <li className="home-link">mission</li>
              <li className="home-link">programs</li>
@@ -41,9 +41,9 @@ const Navbar = () => {
          </li>
          <div  />
          <li className="links-what">
-           <a href="#who">
+           <Link to="/who">
            who we are
-           </a>
+           </Link>
             
            <ul className="who-links show ">
              <li className="who-link">history</li>
@@ -56,7 +56,7 @@ const Navbar = () => {
          </li>
          <div  />
          <li className="links-what">
-          <a href="#what">what we do  </a>
+          <Link to="/what">what we do  </Link>
            
            <ul className="what-links show ">
              <li className="what-link">programs</li>
@@ -66,7 +66,7 @@ const Navbar = () => {
          </li>
          <div/>
          <li className="links-how">
-         <a href="#how">how can we engage</a>
+         <Link to="/how">how can we engage</Link>
             
            <ul className="how-links show ">
              <li className="how-link">donate</li>
@@ -99,11 +99,11 @@ const Navbar = () => {
             onClick={()=>setNavMenu(false)}
            /> 
           <ul className="smallscreen_links">
-              <li><a href="#home" onClick={() => setNavMenu(false)}>Home</a></li>
-              <li><a href="#who" onClick={() => setNavMenu(false)}>Who we are</a></li>
-              <li><a href="#what" onClick={() => setNavMenu(false)}>What we do</a></li>
-              <li><a href="#how" onClick={() => setNavMenu(false)}>How do you engage</a></li>
-              <li><a href="#upate" onClick={() => setNavMenu(false)}>Update</a></li>
+              <li><Link href="/home" onClick={() => setNavMenu(false)}>Home</Link></li>
+              <li><Link to="/who" onClick={() => setNavMenu(false)}>Who we are</Link></li>
+              <li><Link to="/what" onClick={() => setNavMenu(false)}>What we do</Link></li>
+              <li><Link to="/how" onClick={() => setNavMenu(false)}>How do you engage</Link></li>
+              <li><Link to="/upate" onClick={() => setNavMenu(false)}>Update</Link></li>
             </ul>
           </div>
 
