@@ -111,9 +111,13 @@ const Navbar = () => {
       }
      </div>
      <div className="">
+       <Link to='/donation'>
+
        <button className="donate-btn">
          donate
        </button>
+       </Link>
+
        {/* <div className="nav-icons">
           <FaBar className='toggle' />
           <FaCross className='close' />

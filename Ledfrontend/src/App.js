@@ -13,6 +13,7 @@ import DashBoard from './adminTemplates/DashBoard';
 import New from './adminTemplates/pages/new/New'
 import Single from './adminTemplates/pages/single/Single';
 import {userInputs , productInputs} from './formSource'
+import Donation from './component/donation/Donation';
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
         <Route path='/what' element={<What/>}/>
         <Route path='/how' element={<How/>}/>
         {/* <Route path='/dashboard' element={<DashBoard/>}/> */}
-        <Route  path='/new' element={<New inputs={userInputs} />}/>
-        <Route path='/single' element={<Single/>} />
+        <Route  path='/dashboar/new' element={<New inputs={userInputs} />}/>
+        <Route path='/dashboard/donators' element={<Single/>} />
+        <Route path="/donation" element={<Donation/>}/>
       </Routes>
       <Footer/>
     </div>
